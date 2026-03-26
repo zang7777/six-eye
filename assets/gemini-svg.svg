@@ -1,0 +1,68 @@
+<svg width="100%" height="100%" viewBox="0 0 960 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050b14"/>
+      <stop offset="100%" stop-color="#0a1622"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <radialGradient id="irisGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6FFFD2"/>
+      <stop offset="30%" stop-color="#2DA4FF"/>
+      <stop offset="100%" stop-color="#0A1E3A"/>
+    </radialGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E3A4D" stroke-width="0.5" opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="320" fill="url(#bgGrad)" rx="12"/>
+  <rect width="960" height="320" fill="url(#grid)" rx="12"/>
+
+  <g transform="translate(260, 160)">
+    <ellipse cx="0" cy="0" rx="160" ry="90" fill="#02060A" stroke="#1E3A4D" stroke-width="2"/>
+    
+    <path d="M 0 0 L 150 -60 A 160 90 0 0 1 150 60 Z" fill="#2DA4FF" opacity="0.05"/>
+    
+    <ellipse cx="0" cy="0" rx="140" ry="75" fill="none" stroke="#5AF0FF" stroke-width="1" stroke-dasharray="10 5" opacity="0.4"/>
+    <ellipse cx="0" cy="0" rx="110" ry="60" fill="none" stroke="#5AF0FF" stroke-width="1" stroke-dasharray="2 8" opacity="0.6"/>
+    
+    <circle cx="0" cy="0" r="60" fill="url(#irisGrad)" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="45" fill="#040A12" stroke="#6FFFD2" stroke-width="2"/>
+    
+    <circle cx="0" cy="0" r="16" fill="#000"/>
+    
+    <ellipse cx="-18" cy="-22" rx="14" ry="7" fill="#FFFFFF" opacity="0.3" transform="rotate(-30 -18 -22)"/>
+    
+    <circle cx="0" cy="0" r="85" fill="none" stroke="#6FF7FF" stroke-width="1" stroke-dasharray="1 6" opacity="0.8"/>
+  </g>
+
+  <g transform="translate(520, 95)">
+    <path d="M -30 -15 L -45 -15 L -45 160 L -30 160" fill="none" stroke="#5AF0FF" stroke-width="2" opacity="0.3"/>
+    
+    <text x="0" y="0" fill="#EAF7FF" font-size="44" font-family="monospace" font-weight="bold" letter-spacing="3">GOJOSIX.EYE</text>
+    
+    <text x="0" y="30" fill="#6FF7FF" font-size="14" font-family="monospace" letter-spacing="5">CYBERNATIVE OBSERVATORY</text>
+    
+    <line x1="0" y1="50" x2="360" y2="50" stroke="#1E3A4D" stroke-width="2"/>
+    <circle cx="360" cy="50" r="3" fill="#6FF7FF"/>
+    
+    <text x="0" y="80" fill="#9FB4C8" font-size="16" font-family="monospace">
+      <tspan x="0" dy="0">3D cybernetic vision system</tspan>
+      <tspan x="0" dy="25">for RF tracking &amp; spatial sensing.</tspan>
+    </text>
+    
+    <rect x="0" y="130" width="160" height="32" fill="#040A12" stroke="#6FFFD2" stroke-width="1" rx="4"/>
+    <circle cx="18" cy="146" r="5" fill="#6FFFD2" filter="url(#glow)"/>
+    <text x="35" y="151" fill="#6FFFD2" font-size="14" font-family="monospace" font-weight="bold" letter-spacing="1">STATUS: ACTIVE</text>
+    
+    <text x="180" y="151" fill="#2DA4FF" font-size="12" font-family="monospace" opacity="0.8">
+      >_ shadowing the grid...
+    </text>
+  </g>
+</svg>
